@@ -1,3 +1,238 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+  color: #000;
+  font-family: Raleway;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+.header__container {
+  min-height: 88px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container__catalog {
+  display: flex;
+  gap: 26px;
+}
+.header__container__catalog__item {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.header__container__languages {
+  display: flex;
+  gap: 24px;
+}
+.header__container__icons {
+  display: flex;
+  gap: 32px;
+}
+
+.select {
+  display: flex;
+  color: #FFFFFF;
+}
+.select .select__text {
+  margin-right: 8px;
+}
+.main .main-block__image._ibg img {
+  width: 33.33%;
+  height: 900px;
+  object-fit: cover;
+}
+.main .main-block__image {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+.main .main-block__preview {
+  position: relative;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 393px 0;
+}
+.main .main-block__preview__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 46px;
+  line-height: 54px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main .main-block__preview__line {
+  width: 120px;
+  height: 1px;
+  background: #FFFFFF;
+}
+.main .main-block__preview__subtitle {
+  display: flex;
+  gap: 7px;
+  padding-top: 20px;
+}
+.main .main-block__preview__subtitle__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.main-block__categories__title {
+  padding: 100px 0 50px 0;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+}
+.main-block__categories__photos {
+  display: flex;
+  justify-content: space-between;
+}
+.main-block__categories__photos__item {
+  height: 450px;
+  position: relative;
+}
+.main-block__categories__photos__item__subtitle {
+  position: absolute;
+  bottom: 0;
+  background: rgba(224, 190, 162, 0.75);
+  backdrop-filter: blur(3px);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 8px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  width: 100%;
+}
+
+.main-block__news {
+  padding-top: 100px;
+  width: 600px;
+}
+.main-block__news__title {
+  padding-bottom: 50px;
+  text-align: center;
+  width: 100%;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
+  color: #252525;
+}
+.main-block__news__control {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-block__news__subtitle {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.button__while {
+  width: 100%;
+  background: transparent;
+  border: 0.5px solid #252525;
+  box-sizing: border-box;
+  height: 50px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: rgba(37, 37, 37, 0.5);
+  cursor: pointer;
+}
+
+.button__orange {
+  background: #E0BEA2;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.footer {
+  padding-bottom: 74px;
+}
+.footer__block {
+  width: 100%;
+  display: flex;
+  gap: 47px;
+}
+.footer__block_col {
+  width: 250px;
+}
+.footer__block_col__title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #252525;
+  padding-bottom: 20px;
+}
+.footer__block_col__content {
+  padding-bottom: 10px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__block_col__content__icon {
+  padding-right: 12px;
+}
 
 /*# sourceMappingURL=style.css.map */
