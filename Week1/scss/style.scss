@@ -35,6 +35,9 @@ html, body {
   margin: 0 auto;
 }
 
+$while: #FFFFFF;
+$bg-button: #E0BEA2;
+
 
 // HEADER
 .header {
@@ -59,7 +62,7 @@ html, body {
          font-weight: 300;
          font-size: 18px;
          line-height: 21px;
-         color: #FFFFFF;
+         color: $while;
        }
     }
 
@@ -77,7 +80,7 @@ html, body {
 
 .select {
   display: flex;
-  color: #FFFFFF;
+  color: $while;
 
   .select__text {
     margin-right: 8px;;
@@ -86,6 +89,40 @@ html, body {
   img.select__svg {
   }
 }
+
+@media only screen and (max-width: 746px) {
+  .header {
+
+    &__container {
+      &__menu_icon {
+        width: 30px;
+        margin-right: 30px;;
+        transform: scale(0.9);
+      }
+      &__logo {
+        transform: scale(0.5);
+      }
+      &__catalog {
+        display: none;
+      }
+
+      &__languages {
+        display: none;
+      }
+
+      &__icons {
+        transform: scale(0.8);
+        gap: 20px;
+        width: 60px;
+        :nth-child(n+3) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// MAIN
 
 .main {
   .main-block__image._ibg {
@@ -105,7 +142,7 @@ html, body {
 
   .main-block__preview {
     position: relative;
-    color: #FFFFFF;
+    color: $while;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,7 +159,7 @@ html, body {
     &__line {
       width: 120px;
       height: 1px;
-      background: #FFFFFF;
+      background: $while;
     }
     &__subtitle {
       display: flex;
@@ -133,9 +170,47 @@ html, body {
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        color: #FFFFFF;
+        color: $while;
       }
       &__icon {}
+    }
+  }
+}
+
+@media only screen and (max-width: 746px) {
+  .main {
+    .main-block__image._ibg {
+      img {
+        width: 100%;
+        height: 667px;
+      }
+      :nth-last-child(-n+2) {
+        display: none;
+      }
+    }
+
+    .main-block__preview {
+      padding: 290px 0;
+
+      &__title {
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
+        padding-bottom: 15px;
+      }
+      &__line {
+        width: 120px;
+        height: 1px;
+        background: $while;
+      }
+      &__subtitle {
+        padding-top: 16px;
+
+        &__text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
     }
   }
 }
@@ -160,7 +235,7 @@ html, body {
         bottom: 0;
         background: rgba(224, 190, 162, 0.75);
         backdrop-filter: blur(3px);
-        color: #FFFFFF;
+        color: $while;
         text-align: center;
         padding: 8px;
         font-weight: 300;
@@ -169,6 +244,41 @@ html, body {
         width: 100%;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 746px) {
+  .main-block__categories {
+
+    &__title {
+      padding: 60px 20px 30px 20px;
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &__photos {
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        width: 165px;
+        height: 230px;
+        &__photo {
+          width: 165px;
+          height: 230px;
+          object-fit: cover;
+        }
+        &__subtitle {
+          font-size: 18px;
+          line-height: 21px;
+          padding: 7px 0;
+        }
+      }
+    }
+  }
+
+  .main-block__categories__photos__item:nth-last-child(-n+2) {
+    display: none;
   }
 }
 
@@ -202,6 +312,31 @@ html, body {
   }
 }
 
+@media only screen and (max-width: 746px) {
+  .main-block__news {
+    padding: 60px 20px 0 20px;
+    width: 100%;
+
+    &__title {
+      padding-bottom: 30px;
+      font-size: 24px;
+      line-height: 28px;
+      color: #252525;
+    }
+
+    &__control {
+      gap: 15px;
+    }
+
+    &__subtitle {
+      padding-top: 15px;
+      padding-bottom: 60px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
 .button__while {
   width: 100%;
   background: transparent;
@@ -217,16 +352,31 @@ html, body {
 }
 
 .button__orange {
-  background: #E0BEA2;
+  background: $bg-button;
   width: 100%;
   box-sizing: border-box;
   height: 50px;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  color: #FFFFFF;
+  color: $while;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 746px) {
+  .button__while {
+    height: 40px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .button__orange {
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .footer {
