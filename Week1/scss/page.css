@@ -1,0 +1,31 @@
+.page {
+  padding: 130px 0 40px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.page .page__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.page .page__row .page__arrow {
+  padding: 0 11px;
+}
+.page .page__row .page__link {
+  text-decoration: none;
+  color: #252525;
+}
+.page .page__row .page__link a {
+  text-decoration: none;
+  color: #252525;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 70px 0 40px 0;
+  }
+}
+
+/*# sourceMappingURL=page.css.map */

@@ -4,7 +4,7 @@ dropdowns.forEach(dropdown => {
     const list = dropdown.querySelector(".dropdown__list");
     let active;
 
-    function refreshList() {
+    const refreshList = () => {
         active = list.querySelector(".dropdown__active");
         active.addEventListener("click", () => {
             dropdown.classList.toggle("active");
@@ -13,7 +13,7 @@ dropdowns.forEach(dropdown => {
         });
     }
 
-    function ChoseNewActive(e) {
+    const ChoseNewActive = (e) => {
         active.classList.remove("dropdown__active");
 
         let tmp = active.cloneNode(true);
@@ -39,7 +39,7 @@ dropdowns.forEach(dropdown => {
         }
     });
 
-    function closeByOuterClick(e) {
+    const closeByOuterClick = (e) => {
         if (e.target !== dropdown && !dropdown.contains(e.target)) {
             if (dropdown.classList.contains("active")) {
                 dropdown.classList.remove("active");
