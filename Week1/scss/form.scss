@@ -1,0 +1,57 @@
+input[type="email"], input[type="text"], input[type="tel"] {
+  border: 0.5px solid rgba(37, 37, 37, 0.3);
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+input[type="email"]::placeholder, input[type="text"]::placeholder, input[type="tel"]::placeholder {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+input[type="submit"] {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #E0BEA2;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+input[type="submit"]:active {
+  background-color: #CCA88A;
+}
+input[type='radio'] {
+  accent-color: #E0BEA2;
+}
+input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #E0BEA2;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}

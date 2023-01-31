@@ -1,0 +1,703 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="scss/catalog.css">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <nav class="header__nav">
+      <div class="container">
+        <div class="header__row">
+          <div class="header__item header__row">
+            <div class="header__burger"><span></span></div>
+            <div class="header__menu">
+              <div class="container">
+                <ul class="header__list">
+                  <li>
+                    <a href="">ОПЛАТА И ДОСТАВКА</a>
+                  </li>
+                  <li>
+                    <a href="">УСЛОВИЯ ВОЗВРАТА</a>
+                  </li>
+                  <li>
+                    <a href="">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header__menu_mobile">
+              <div class="container">
+                <ul class="header__list">
+                  <li>
+                    <div class="header__row">
+                      <div class="header__search">
+                        <form action="">
+                          <input type="text" placeholder="Введите ваш запрос">
+                        </form>
+                      </div>
+                      <div class="header__drops">
+                        <div class="dropdown__row">
+                          <div class="dropdown black">
+                            <ul class="dropdown__list">
+                              <li class="dropdown__active">RU</li>
+                              <li>UA</li>
+                              <li>EN</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="">
+                      <div class="header__center">
+                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 20C0 17.9793 0.802719 16.0414 2.23157 14.6125C3.66042 13.1837 5.59835 12.381 7.61905 12.381C9.63974 12.381 11.5777 13.1837 13.0065 14.6125C14.4354 16.0414 15.2381 17.9793 15.2381 20H13.3333C13.3333 18.4845 12.7313 17.031 11.6597 15.9594C10.588 14.8878 9.13457 14.2857 7.61905 14.2857C6.10352 14.2857 4.65007 14.8878 3.57844 15.9594C2.5068 17.031 1.90476 18.4845 1.90476 20H0ZM7.61905 11.4286C4.4619 11.4286 1.90476 8.87143 1.90476 5.71429C1.90476 2.55714 4.4619 0 7.61905 0C10.7762 0 13.3333 2.55714 13.3333 5.71429C13.3333 8.87143 10.7762 11.4286 7.61905 11.4286ZM7.61905 9.52381C9.72381 9.52381 11.4286 7.81905 11.4286 5.71429C11.4286 3.60952 9.72381 1.90476 7.61905 1.90476C5.51428 1.90476 3.80952 3.60952 3.80952 5.71429C3.80952 7.81905 5.51428 9.52381 7.61905 9.52381Z" fill="#E0BEA2"/>
+                        </svg>
+                        <span>ЛИЧНЫЙ КАБИНЕТ</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">NEW</a>
+                  </li>
+                  <li>
+                    <a href="">КАТАЛОГ</a>
+                  </li>
+                  <li>
+                    <a href="">О НАС</a>
+                  </li>
+                  <li>
+                    <a href="">УСЛОВИЯ ВОЗВРАТА</a>
+                  </li>
+                  <li>
+                    <a href="">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+                <div class="header__contacts">
+                  <div class="header__contact">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.50016 6.12492C7.87027 6.12492 7.26618 6.37514 6.82078 6.82054C6.37539 7.26594 6.12516 7.87003 6.12516 8.49992C6.12516 9.12981 6.37539 9.7339 6.82078 10.1793C7.26618 10.6247 7.87027 10.8749 8.50016 10.8749C9.13005 10.8749 9.73414 10.6247 10.1795 10.1793C10.6249 9.7339 10.8752 9.12981 10.8752 8.49992C10.8752 7.87003 10.6249 7.26594 10.1795 6.82054C9.73414 6.37514 9.13005 6.12492 8.50016 6.12492ZM8.50016 4.54159C9.54998 4.54159 10.5568 4.95862 11.2991 5.70095C12.0415 6.44329 12.4585 7.4501 12.4585 8.49992C12.4585 9.54974 12.0415 10.5566 11.2991 11.2989C10.5568 12.0412 9.54998 12.4583 8.50016 12.4583C7.45035 12.4583 6.44353 12.0412 5.7012 11.2989C4.95887 10.5566 4.54183 9.54974 4.54183 8.49992C4.54183 7.4501 4.95887 6.44329 5.7012 5.70095C6.44353 4.95862 7.45035 4.54159 8.50016 4.54159ZM13.646 4.34367C13.646 4.60612 13.5417 4.85783 13.3562 5.04341C13.1706 5.22899 12.9189 5.33325 12.6564 5.33325C12.394 5.33325 12.1423 5.22899 11.9567 5.04341C11.7711 4.85783 11.6668 4.60612 11.6668 4.34367C11.6668 4.08122 11.7711 3.82951 11.9567 3.64393C12.1423 3.45834 12.394 3.35409 12.6564 3.35409C12.9189 3.35409 13.1706 3.45834 13.3562 3.64393C13.5417 3.82951 13.646 4.08122 13.646 4.34367ZM8.50016 2.16659C6.54158 2.16659 6.22175 2.17213 5.31054 2.2125C4.68987 2.24179 4.27345 2.32492 3.88712 2.47534C3.54354 2.60834 3.29575 2.76746 3.03212 3.03188C2.78434 3.27128 2.59382 3.56355 2.47479 3.88688C2.32437 4.27479 2.24125 4.69042 2.21275 5.31029C2.17158 6.18429 2.16683 6.48988 2.16683 8.49992C2.16683 10.4585 2.17237 10.7783 2.21275 11.6895C2.24204 12.3094 2.32516 12.7266 2.47479 13.1122C2.60937 13.4565 2.7677 13.7043 3.03054 13.9672C3.29733 14.2332 3.54512 14.3923 3.88554 14.5237C4.27662 14.6749 4.69304 14.7588 5.31054 14.7873C6.18454 14.8285 6.49012 14.8333 8.50016 14.8333C10.4587 14.8333 10.7786 14.8277 11.6898 14.7873C12.3089 14.758 12.7261 14.6749 13.1124 14.5253C13.4552 14.3915 13.7046 14.2324 13.9674 13.9695C14.2342 13.7028 14.3933 13.455 14.5247 13.1145C14.6752 12.7243 14.7591 12.307 14.7876 11.6895C14.8287 10.8155 14.8335 10.51 14.8335 8.49992C14.8335 6.54134 14.828 6.2215 14.7876 5.31029C14.7583 4.69121 14.6752 4.27321 14.5247 3.88688C14.4054 3.56388 14.2153 3.27172 13.9682 3.03188C13.7289 2.78396 13.4366 2.59343 13.1132 2.47454C12.7253 2.32413 12.3089 2.241 11.6898 2.2125C10.8158 2.17134 10.5102 2.16659 8.50016 2.16659ZM8.50016 0.583252C10.6511 0.583252 10.9195 0.591169 11.7634 0.630752C12.6065 0.670335 13.1805 0.802544 13.6856 0.998877C14.2081 1.19996 14.6482 1.47229 15.0884 1.91167C15.491 2.30742 15.8025 2.78613 16.0012 3.3145C16.1967 3.81879 16.3297 4.39354 16.3693 5.23667C16.4065 6.08059 16.4168 6.34896 16.4168 8.49992C16.4168 10.6509 16.4089 10.9193 16.3693 11.7632C16.3297 12.6063 16.1967 13.1803 16.0012 13.6853C15.803 14.214 15.4915 14.6928 15.0884 15.0882C14.6926 15.4906 14.2139 15.8021 13.6856 16.001C13.1813 16.1965 12.6065 16.3295 11.7634 16.3691C10.9195 16.4063 10.6511 16.4166 8.50016 16.4166C6.34921 16.4166 6.08083 16.4087 5.23691 16.3691C4.39379 16.3295 3.81983 16.1965 3.31475 16.001C2.78617 15.8026 2.30737 15.4911 1.91191 15.0882C1.50928 14.6925 1.19778 14.2137 0.999121 13.6853C0.802788 13.181 0.670579 12.6063 0.630996 11.7632C0.593788 10.9193 0.583496 10.6509 0.583496 8.49992C0.583496 6.34896 0.591413 6.08059 0.630996 5.23667C0.670579 4.39275 0.802788 3.81959 0.999121 3.3145C1.19722 2.78581 1.5088 2.30696 1.91191 1.91167C2.30749 1.50889 2.78625 1.19737 3.31475 0.998877C3.81983 0.802544 4.393 0.670335 5.23691 0.630752C6.08083 0.593544 6.34921 0.583252 8.50016 0.583252Z" fill="#E0BEA2"/>
+                    </svg>
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.49968 14.8335C10.1794 14.8335 11.7903 14.1662 12.978 12.9785C14.1657 11.7908 14.833 10.1799 14.833 8.50016C14.833 6.82046 14.1657 5.20955 12.978 4.02182C11.7903 2.83409 10.1794 2.16683 8.49968 2.16683C6.81997 2.16683 5.20906 2.83409 4.02133 4.02182C2.8336 5.20955 2.16634 6.82046 2.16634 8.50016C2.16634 10.1799 2.8336 11.7908 4.02133 12.9785C5.20906 14.1662 6.81997 14.8335 8.49968 14.8335ZM8.49968 16.4168C4.1273 16.4168 0.583008 12.8725 0.583008 8.50016C0.583008 4.12779 4.1273 0.583496 8.49968 0.583496C12.8721 0.583496 16.4163 4.12779 16.4163 8.50016C16.4163 12.8725 12.8721 16.4168 8.49968 16.4168ZM6.03759 9.42641L4.06001 8.8097C3.63251 8.67908 3.63013 8.38458 4.1558 8.1732L11.8611 5.19654C12.3084 5.01446 12.5617 5.24483 12.4168 5.82195L11.1051 12.0128C11.0132 12.4537 10.748 12.559 10.3799 12.3556L8.36034 10.8609L7.41905 11.7697C7.32247 11.8632 7.24409 11.9431 7.09526 11.9629C6.94722 11.9835 6.8253 11.9392 6.73584 11.6937L6.04709 9.42087L6.03759 9.42641Z" fill="#E0BEA2"/>
+                    </svg>
+
+                  </div>
+                  <div class="header__contact">+38(073) 096 36 44</div>
+                  <div class="header__contact">info@yanki.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="header__item header__drops header__text header__show pointer">
+              <div class="dropdown__row">
+                <div class="dropdown black">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__active">RU</li>
+                    <li>UA</li>
+                    <li>EN</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__item header__row header__hide">
+            <div class="header__item header__text">
+              <a class="header__link" href="">NEW</a>
+            </div>
+            <div class="header__item header__text">
+              <span class="header__link header__link_active">Каталог</span>
+            </div>
+            <div class="header__item header__text">
+              <a class="header__link" href="">О нас</a>
+            </div>
+          </div>
+          <div class="header__item">
+            <a href="index.html">
+              <svg class="svg_1 logo" width="159" height="40" viewBox="0 0 159 40" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.33803 0L17.4085 21.5211L30.5915 0H34.8732L19.3803 25.1268V40H15.4366V25.0141L0 0H4.33803Z"
+                      fill="white"/>
+                <path d="M48.7474 0H52.0713L68.691 40H64.522L59.3389 27.493H41.3671L36.2403 40H32.015L48.7474 0ZM58.4375 24.3944L50.3812 4.61972L42.2121 24.3944H58.4375Z"
+                      fill="white"/>
+                <path d="M78.3688 7.26761V40H74.4252V0H77.6928L103.946 33.3521V0.0563369H107.89V40H104.228L78.3688 7.26761Z"
+                      fill="white"/>
+                <path d="M117.944 40V0.0563369H121.888V23.2676L143.916 0H148.254L131.916 17.5775L149.099 40H144.648L129.381 19.9437L121.888 27.7183V40H117.944Z"
+                      fill="white"/>
+                <path d="M154.146 40V0H158.089V40H154.146Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+          <div class="header__item header__hide">
+            <div class="header__row">
+              <div class="header__item header__drops header__text pointer">
+                <div class="dropdown__row">
+                  <div class="dropdown black">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__active">RU</li>
+                      <li>UA</li>
+                      <li>EN</li>
+                    </ul>
+                  </div>
+                  <div class="dropdown black">
+                    <ul class="dropdown__list">
+                      <li class="dropdown__active">UAH</li>
+                      <li>USD</li>
+                      <li>EUR</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__item">
+            <div class="header__row">
+              <div class="header__item header__hide header__text pointer">
+                <svg class="svg_2" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.729 17.9888L25 23.2586L23.2586 25L17.9888 19.729C16.028 21.3009 13.5892 22.1558 11.0761 22.1522C4.9621 22.1522 0 17.1901 0 11.0761C0 4.9621 4.9621 0 11.0761 0C17.1901 0 22.1522 4.9621 22.1522 11.0761C22.1558 13.5892 21.3009 16.028 19.729 17.9888ZM17.2603 17.0757C18.8221 15.4695 19.6944 13.3165 19.6909 11.0761C19.6909 6.31584 15.8351 2.46136 11.0761 2.46136C6.31584 2.46136 2.46136 6.31584 2.46136 11.0761C2.46136 15.8351 6.31584 19.6909 11.0761 19.6909C13.3165 19.6944 15.4695 18.8221 17.0757 17.2603L17.2603 17.0757Z"
+                        fill="white"/>
+                </svg>
+              </div>
+              <div class="header__item header__hide header__text pointer">
+                <svg class="svg_1" width="20" height="25" viewBox="0 0 20 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.5 25C0.5 22.4741 1.5034 20.0517 3.28946 18.2656C5.07552 16.4796 7.49794 15.4762 10.0238 15.4762C12.5497 15.4762 14.9721 16.4796 16.7582 18.2656C18.5442 20.0517 19.5476 22.4741 19.5476 25H17.1667C17.1667 23.1056 16.4141 21.2888 15.0746 19.9492C13.735 18.6097 11.9182 17.8571 10.0238 17.8571C8.1294 17.8571 6.31259 18.6097 4.97305 19.9492C3.6335 21.2888 2.88095 23.1056 2.88095 25H0.5ZM10.0238 14.2857C6.07738 14.2857 2.88095 11.0893 2.88095 7.14286C2.88095 3.19643 6.07738 0 10.0238 0C13.9702 0 17.1667 3.19643 17.1667 7.14286C17.1667 11.0893 13.9702 14.2857 10.0238 14.2857ZM10.0238 11.9048C12.6548 11.9048 14.7857 9.77381 14.7857 7.14286C14.7857 4.5119 12.6548 2.38095 10.0238 2.38095C7.39286 2.38095 5.2619 4.5119 5.2619 7.14286C5.2619 9.77381 7.39286 11.9048 10.0238 11.9048Z"
+                        fill="white"/>
+                </svg>
+              </div>
+              <div class="header__item header__text pointer">
+                <svg class="svg_1" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                        fill="white"/>
+                </svg>
+              </div>
+              <div class="header__item header__text pointer">
+                <svg class="svg_1" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.81655 5.48063L0 1.66525L1.66525 0L5.48063 3.81655H23.4183C23.6017 3.81654 23.7826 3.85941 23.9466 3.94173C24.1105 4.02406 24.2529 4.14356 24.3624 4.2907C24.4719 4.43785 24.5456 4.60856 24.5774 4.78921C24.6092 4.96986 24.5984 5.15545 24.5457 5.33117L21.7213 14.746C21.6486 14.9886 21.4997 15.2012 21.2966 15.3524C21.0935 15.5035 20.847 15.5852 20.5938 15.5851H6.17027V17.9389H19.1157V20.2926H4.99341C4.68129 20.2926 4.38195 20.1686 4.16125 19.9479C3.94054 19.7272 3.81655 19.4278 3.81655 19.1157V5.48063ZM6.17027 6.17027V13.2314H19.7183L21.8366 6.17027H6.17027ZM5.58184 25C5.11366 25 4.66465 24.814 4.33359 24.483C4.00254 24.1519 3.81655 23.7029 3.81655 23.2347C3.81655 22.7665 4.00254 22.3175 4.33359 21.9865C4.66465 21.6554 5.11366 21.4694 5.58184 21.4694C6.05002 21.4694 6.49903 21.6554 6.83009 21.9865C7.16114 22.3175 7.34713 22.7665 7.34713 23.2347C7.34713 23.7029 7.16114 24.1519 6.83009 24.483C6.49903 24.814 6.05002 25 5.58184 25ZM19.7041 25C19.236 25 18.7869 24.814 18.4559 24.483C18.1248 24.1519 17.9388 23.7029 17.9388 23.2347C17.9388 22.7665 18.1248 22.3175 18.4559 21.9865C18.7869 21.6554 19.236 21.4694 19.7041 21.4694C20.1723 21.4694 20.6213 21.6554 20.9524 21.9865C21.2834 22.3175 21.4694 22.7665 21.4694 23.2347C21.4694 23.7029 21.2834 24.1519 20.9524 24.483C20.6213 24.814 20.1723 25 19.7041 25Z"
+                        fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="page">
+        <div class="page__row">
+          <div class="page__link">
+            <a href="index.html">Главная</a>
+          </div>
+          <div class="page__arrow">
+            <svg class="svg_1" width="7" height="10" viewBox="0 0 7 10" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.88906 5L0 1.11094L1.11094 0L6.11094 5L1.11094 10L0 8.88906L3.88906 5Z"
+                    fill="white"/>
+            </svg>
+          </div>
+          <div class="page__link">Каталог</div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="content__row">
+          <aside class="aside">
+            <div class="aside__title">Каталог</div>
+            <div class="aside__link">
+              <a href="">New</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Bestsellers</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Верхняя одежда</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Тренчи</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Пальто</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Пуховики и жилеты</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Костюмы</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Жакеты</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Платья</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Рубашки и блузы</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Юбки</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Футболки и топы</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Аксессуары</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Sale</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Summer</a>
+            </div>
+            <div class="aside__link">
+              <a href="">Посмотреть всё</a>
+            </div>
+          </aside>
+          <div class="catalog">
+            <div class="catalog__mobileAside">
+              <span>Каталог</span>
+              <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.01855 3.88906L8.90762 -4.85606e-08L10.0186 1.11094L5.01855 6.11093L0.0185546 1.11094L1.12949 -3.88553e-07L5.01855 3.88906Z"
+                      fill="white"/>
+              </svg>
+            </div>
+            <div class="catalog__mobileFilters">
+              <div class="catalog__filterContent">
+                <span>Фильтры</span>
+                <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.75 7.75V11.5L4.25 12.75V7.75L0.5 2.125V0.875H10.5V2.125L6.75 7.75ZM2.0025 2.125L5.5 7.37125L8.9975 2.125H2.0025Z"
+                        fill="#E0BEA2"/>
+                </svg>
+              </div>
+              <div class="catalog__filterArrow">
+                <svg class="svg_1" width="11" height="7" viewBox="0 0 11 7" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.01855 3.88906L8.90762 -4.85606e-08L10.0186 1.11094L5.01855 6.11093L0.0185546 1.11094L1.12949 -3.88553e-07L5.01855 3.88906Z"
+                        fill="white"/>
+                </svg>
+              </div>
+            </div>
+            <div class="catalog__filters">
+              <div class="dropdown__row">
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__active">Размер</li>
+                    <li>XXS</li>
+                    <li>XS</li>
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__active">Цвет</li>
+                    <li>White</li>
+                    <li>Blue</li>
+                    <li>Cream</li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__active">Цена</li>
+                    <li>From smallest</li>
+                    <li>From biggest</li>
+                  </ul>
+                </div>
+                <div class="dropdown">
+                  <ul class="dropdown__list">
+                    <li class="dropdown__active">Сортировать по</li>
+                    <li>Popularity</li>
+                    <li>Sales</li>
+                    <li>Fashion</li>
+                    <li>New</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%2011.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Белая куртка
+                    <span class="items__tag">new</span>
+                  </div>
+                  <div class="items__price">2900 грн</div>
+                  <div class="items__sizes">XXS XS S M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%2010.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Синее пальто
+                  </div>
+                  <div class="items__price">3150 грн</div>
+                  <div class="items__sizes">XS M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%207.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Бежевая шуба
+                  </div>
+                  <div class="items__price">4200 грн</div>
+                  <div class="items__sizes">XS S L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%209.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Синяя парка
+                    <span class="items__tag">new</span>
+                  </div>
+                  <div class="items__price">2900 грн</div>
+                  <div class="items__sizes">XXS XS S M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%2011.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Белая куртка
+                    <span class="items__tag">new</span>
+                  </div>
+                  <div class="items__price">2900 грн</div>
+                  <div class="items__sizes">XXS XS S M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%2010.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Синее пальто
+                  </div>
+                  <div class="items__price">3150 грн</div>
+                  <div class="items__sizes">XS M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%207.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Бежевая шуба
+                  </div>
+                  <div class="items__price">4200 грн</div>
+                  <div class="items__sizes">XS S L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%209.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Синяя парка
+                    <span class="items__tag">new</span>
+                  </div>
+                  <div class="items__price">2900 грн</div>
+                  <div class="items__sizes">XXS XS S M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%2011.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Белая куртка
+                    <span class="items__tag">new</span>
+                  </div>
+                  <div class="items__price">2900 грн</div>
+                  <div class="items__sizes">XXS XS S M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%2010.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Синее пальто
+                  </div>
+                  <div class="items__price">3150 грн</div>
+                  <div class="items__sizes">XS M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%207.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Бежевая шуба
+                  </div>
+                  <div class="items__price">4200 грн</div>
+                  <div class="items__sizes">XS S L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+              <a href="item.html" class="items__card">
+                <div class="items__img">
+                  <img src="img/Rectangle%209.png" alt="">
+                  <div class="items__like">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12.501 2.16119C15.4372 -0.475012 19.9746 -0.387513 22.8033 2.44618C25.6308 5.28113 25.7283 9.79605 23.0983 12.741L12.4985 23.3558L1.90122 12.741C-0.728729 9.79605 -0.62998 5.27363 2.19622 2.44618C5.02741 -0.383763 9.55608 -0.478762 12.501 2.16119ZM21.0334 4.2124C19.1584 2.33494 16.1335 2.25869 14.171 4.02115L12.5023 5.51863L10.8323 4.0224C8.86359 2.25744 5.8449 2.33494 3.96493 4.2149C2.10247 6.07737 2.00872 9.05856 3.72494 11.0285L12.4998 19.8171L21.2746 11.0298C22.9921 9.05856 22.8983 6.08112 21.0334 4.2124Z"
+                            fill="white"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="items__info">
+                  <div class="items__title">
+                    Синяя парка
+                    <span class="items__tag">new</span>
+                  </div>
+                  <div class="items__price">2900 грн</div>
+                  <div class="items__sizes">XXS XS S M L</div>
+                  <div class="items__colors">
+                    <div class="color color_1"></div>
+                    <div class="color color_2"></div>
+                    <div class="color color_3"></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__item">
+          <div class="footer__title">
+            <span>КОМПАНИЯ</span>
+            <div class="footer__arrow pointer"></div>
+          </div>
+          <div class="footer__links">
+            <a href="" class="footer__link">О нас</a>
+            <a href="" class="footer__link">Контакты</a>
+          </div>
+          <div class="footer__arrow pointer"></div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__title">
+            <span>ПОЛЕЗНОЕ</span>
+            <div class="footer__arrow pointer"></div>
+          </div>
+          <div class="footer__links">
+            <a href="" class="footer__link">Оплата и доставка</a>
+            <a href="" class="footer__link">Условия возврата</a>
+            <a href="" class="footer__link">Бонусная система</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__title">
+            <span>ПОКУПАТЕЛЮ</span>
+            <div class="footer__arrow pointer"></div>
+          </div>
+          <div class="footer__links">
+            <a href="" class="footer__link">Избранное</a>
+            <a href="" class="footer__link">Публичная оферта</a>
+            <a href="" class="footer__link">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <div class="footer__title">
+            <span>КОНТАКТЫ</span>
+            <div class="footer__arrow pointer"></div>
+          </div>
+          <div class="footer__links ">
+            <a href="" class="footer__link">
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.49968 6.125C7.86979 6.125 7.2657 6.37522 6.8203 6.82062C6.3749 7.26602 6.12467 7.87011 6.12467 8.5C6.12467 9.12989 6.3749 9.73398 6.8203 10.1794C7.2657 10.6248 7.86979 10.875 8.49968 10.875C9.12956 10.875 9.73365 10.6248 10.1791 10.1794C10.6245 9.73398 10.8747 9.12989 10.8747 8.5C10.8747 7.87011 10.6245 7.26602 10.1791 6.82062C9.73365 6.37522 9.12956 6.125 8.49968 6.125ZM8.49968 4.54167C9.54949 4.54167 10.5563 4.9587 11.2986 5.70104C12.041 6.44337 12.458 7.45018 12.458 8.5C12.458 9.54982 12.041 10.5566 11.2986 11.299C10.5563 12.0413 9.54949 12.4583 8.49968 12.4583C7.44986 12.4583 6.44304 12.0413 5.70071 11.299C4.95838 10.5566 4.54134 9.54982 4.54134 8.5C4.54134 7.45018 4.95838 6.44337 5.70071 5.70104C6.44304 4.9587 7.44986 4.54167 8.49968 4.54167ZM13.6455 4.34375C13.6455 4.6062 13.5413 4.85791 13.3557 5.04349C13.1701 5.22907 12.9184 5.33333 12.6559 5.33333C12.3935 5.33333 12.1418 5.22907 11.9562 5.04349C11.7706 4.85791 11.6663 4.6062 11.6663 4.34375C11.6663 4.0813 11.7706 3.82959 11.9562 3.64401C12.1418 3.45843 12.3935 3.35417 12.6559 3.35417C12.9184 3.35417 13.1701 3.45843 13.3557 3.64401C13.5413 3.82959 13.6455 4.0813 13.6455 4.34375ZM8.49968 2.16667C6.54109 2.16667 6.22126 2.17221 5.31005 2.21258C4.68938 2.24187 4.27297 2.325 3.88663 2.47542C3.54305 2.60842 3.29526 2.76754 3.03163 3.03196C2.78385 3.27136 2.59333 3.56363 2.4743 3.88696C2.32388 4.27487 2.24076 4.6905 2.21226 5.31037C2.17109 6.18437 2.16634 6.48996 2.16634 8.5C2.16634 10.4586 2.17188 10.7784 2.21226 11.6896C2.24155 12.3095 2.32467 12.7267 2.4743 13.1123C2.60888 13.4566 2.76722 13.7044 3.03005 13.9672C3.29684 14.2333 3.54463 14.3924 3.88505 14.5238C4.27613 14.675 4.69255 14.7589 5.31005 14.7874C6.18405 14.8286 6.48963 14.8333 8.49968 14.8333C10.4583 14.8333 10.7781 14.8278 11.6893 14.7874C12.3084 14.7581 12.7256 14.675 13.1119 14.5254C13.4547 14.3916 13.7041 14.2325 13.9669 13.9696C14.2337 13.7028 14.3928 13.455 14.5243 13.1146C14.6747 12.7243 14.7586 12.3071 14.7871 11.6896C14.8283 10.8156 14.833 10.51 14.833 8.5C14.833 6.54142 14.8275 6.22158 14.7871 5.31037C14.7578 4.69129 14.6747 4.27329 14.5243 3.88696C14.4049 3.56396 14.2148 3.2718 13.9677 3.03196C13.7284 2.78404 13.4361 2.59351 13.1127 2.47462C12.7248 2.32421 12.3084 2.24108 11.6893 2.21258C10.8153 2.17142 10.5097 2.16667 8.49968 2.16667ZM8.49968 0.583332C10.6506 0.583332 10.919 0.591249 11.7629 0.630832C12.6061 0.670415 13.18 0.802624 13.6851 0.998957C14.2076 1.20004 14.6478 1.47237 15.0879 1.91175C15.4905 2.3075 15.802 2.78622 16.0007 3.31458C16.1963 3.81887 16.3293 4.39362 16.3688 5.23675C16.4061 6.08067 16.4163 6.34904 16.4163 8.5C16.4163 10.651 16.4084 10.9193 16.3688 11.7632C16.3293 12.6064 16.1963 13.1803 16.0007 13.6854C15.8025 14.2141 15.491 14.6929 15.0879 15.0883C14.6921 15.4907 14.2134 15.8021 13.6851 16.001C13.1808 16.1966 12.6061 16.3296 11.7629 16.3692C10.919 16.4064 10.6506 16.4167 8.49968 16.4167C6.34872 16.4167 6.08034 16.4088 5.23642 16.3692C4.3933 16.3296 3.81934 16.1966 3.31426 16.001C2.78568 15.8027 2.30688 15.4912 1.91142 15.0883C1.50879 14.6926 1.19729 14.2138 0.998633 13.6854C0.8023 13.1811 0.670091 12.6064 0.630508 11.7632C0.593299 10.9193 0.583008 10.651 0.583008 8.5C0.583008 6.34904 0.590924 6.08067 0.630508 5.23675C0.670091 4.39283 0.8023 3.81967 0.998633 3.31458C1.19674 2.78589 1.50831 2.30704 1.91142 1.91175C2.307 1.50897 2.78576 1.19745 3.31426 0.998957C3.81934 0.802624 4.39251 0.670415 5.23642 0.630832C6.08034 0.593624 6.34872 0.583332 8.49968 0.583332Z"
+                      fill="#E0BEA2"/>
+              </svg>
+              <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.49968 14.8333C10.1794 14.8333 11.7903 14.1661 12.978 12.9783C14.1657 11.7906 14.833 10.1797 14.833 8.5C14.833 6.82029 14.1657 5.20939 12.978 4.02166C11.7903 2.83393 10.1794 2.16667 8.49968 2.16667C6.81997 2.16667 5.20906 2.83393 4.02133 4.02166C2.8336 5.20939 2.16634 6.82029 2.16634 8.5C2.16634 10.1797 2.8336 11.7906 4.02133 12.9783C5.20906 14.1661 6.81997 14.8333 8.49968 14.8333ZM8.49968 16.4167C4.1273 16.4167 0.583008 12.8724 0.583008 8.5C0.583008 4.12762 4.1273 0.583332 8.49968 0.583332C12.8721 0.583332 16.4163 4.12762 16.4163 8.5C16.4163 12.8724 12.8721 16.4167 8.49968 16.4167ZM6.03759 9.42625L4.06001 8.80954C3.63251 8.67892 3.63013 8.38442 4.1558 8.17304L11.8611 5.19637C12.3084 5.01429 12.5617 5.24467 12.4168 5.82179L11.1051 12.0126C11.0132 12.4536 10.748 12.5589 10.3799 12.3554L8.36034 10.8608L7.41905 11.7696C7.32247 11.863 7.24409 11.943 7.09526 11.9628C6.94722 11.9833 6.8253 11.939 6.73584 11.6936L6.04709 9.42071L6.03759 9.42625Z"
+                      fill="#E0BEA2"/>
+              </svg>
+            </a>
+            <a href="" class="footer__link">+38(073) 096 36 44</a>
+            <a href="" class="footer__link">info@yanki.com</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer__rights footer__rights_visible">©️ 2021 Yanki. All rights reserved</div>
+    </div>
+  </footer>
+
+  <script src="js/footer.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/dropdown.js"></script>
+</div>
+</body>
+</html>
