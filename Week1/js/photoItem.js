@@ -1,8 +1,8 @@
-const sideImgs = document.querySelectorAll(".current__sideImg");
-const mainImg = document.querySelector(".current__mainImg");
+const sideImgs = document.querySelectorAll(".this__sideImg");
+const mainImg = document.querySelector(".this__mainImg");
 
 sideImgs.forEach(side => {
-   side.addEventListener("click", PlaceNewMainImg);
+    side.addEventListener("click", PlaceNewMainImg);
 });
 
 function PlaceNewMainImg(e) {
